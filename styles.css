@@ -1,0 +1,159 @@
+:root {
+    /* ### Primary */
+
+--soft-blue: hsl(215, 51%, 70%);
+--cyan: hsl(178, 100%, 50%);
+
+/* ### Neutral */
+--very-dark-blue__main-bg: hsl(217, 54%, 11%);
+--very-dark-blue__card-BG: hsl(216, 50%, 16%);
+--very-dark-blue__line: hsl(215, 32%, 27%);
+--white: hsl(0, 0%, 100%);
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--very-dark-blue__main-bg);
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+
+.card {
+    max-width: 440px;
+    margin: 3rem auto;
+    background-color: var(--very-dark-blue__card-BG);
+    border-radius: 1rem;
+    box-shadow: -8px 15px 10px 20px rgba(0, 0, 0, 0.106);
+}
+
+/* ////// MAIN IMAGE /////  */
+
+.card__image {
+    margin: 0 auto;
+    padding: 1.5em;
+    padding-bottom: 0;
+    position: relative;
+}
+
+.card__main-image {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+
+
+/* ////// MAIN TEXT /////  */
+
+.card__text {
+    padding: 1.5rem;
+    color: var(--soft-blue);
+}
+
+.text__title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 1.2rem;
+}
+
+.text__paragraph {
+    padding-right: 2rem;
+    margin-bottom: 1.8rem;
+    line-height: 1.5;
+}
+
+
+/* ////// CARD FOOTER /////  */
+
+.list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.2rem;
+}
+
+.list__items {
+    display: flex;
+    align-items: center;
+}
+
+.list__items img {
+    padding-right: 8px;
+}
+
+.card__footer {
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 2px solid var(--very-dark-blue__line);
+    display: flex;
+    align-items: center;
+}
+
+.footer__image-avatar {
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid var(--white); 
+    width: 40px;
+}
+
+.footer__text {
+    margin-left: 1rem;
+    color: var(--soft-blue);
+}
+
+
+/* ////// MODIFIERS /////  */
+
+.footer__text--white {
+    color: var(--white);
+}
+
+.list__items--cyan {
+    color: var(--cyan);
+    font-weight: 400;
+}
+
+.text-anchores {
+    text-decoration: none;
+}
+
+
+/* ////// ACTIVE STATES /////  */
+
+.card__image--hover-background {
+    width: 386px;              
+    height: 386px;
+    background-color: rgba(0, 255, 247, 0.5);
+    position: absolute;
+    top: 27px;
+    border-radius: 1rem;
+    display: none;
+}
+
+.image__icon--hover {
+    width: 65px;
+    display: block;
+    margin: 40% auto;
+}
+
+.card__image:hover .card__image--hover-background {
+    display: block;
+    cursor: pointer;
+}
+
+.hovered--text:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
