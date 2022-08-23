@@ -23,6 +23,10 @@ body {
     background-color: var(--very-dark-blue__main-bg);
     font-family: 'Outfit', sans-serif;
     font-size: 18px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
